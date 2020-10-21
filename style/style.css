@@ -226,7 +226,7 @@ h4 {
 }
 
 @media screen and (max-width: 800px){
-    .clock {
+    .countdown {
         display: block;
         margin: 1em 8em;   
     }
