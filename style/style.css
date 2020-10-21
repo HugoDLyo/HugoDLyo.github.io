@@ -188,14 +188,6 @@ h4 {
     font-size: 30px;
 }
 
-/* Cuenta Regresiva */
-
-.p_clock {
-    font-size: 3em;
-    text-align: center;
-    margin-top: 100px;
-}
-
 /*====== Reloj ======*/
 .countdown {
     display: flex;
@@ -225,3 +217,25 @@ h4 {
     font-size: 30px;
 }
 
+/* Cuenta Regresiva Eliminar al finalizar la cuenta */
+
+.p_clock {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 800px){
+    .clock {
+        display: block;
+        margin: 1em 8em;   
+    }
+
+    .simply-section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+ 
+/* ================================================ */
