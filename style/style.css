@@ -3,7 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    
+    --color1: #FFFFFF;
+    --color2: #00BFFF;
 }
 
 h1,
@@ -14,13 +15,31 @@ p {
     font-family: 'Cinzel', serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+strong {
+    color: var(--color2);
+}
+
+p {
+    color: var(--color1);
+}
+
+
 strong {
     font-family: 'Lobster Two', cursive;
 }
 
 body {
-    background-color: #87CEEB;
-    background-color: #b0b0b0;
+    background-image: url(/img/tokio.jpg);
+    background-size: cover;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*====== HEADER ======*/
@@ -42,7 +61,6 @@ body {
 }
 
 h1 {
-    color: #4B0082;
     font-size: 7em;
     text-align: right;
     padding-top: 160px;
@@ -62,7 +80,6 @@ h2 {
     margin-bottom: 10px;
     text-align: center;
     font-size: 3em;
-    color: #000080;
 }
 
 .ct_p {
@@ -78,7 +95,6 @@ h2 {
 }
 
 strong {
-    color: #000080;
     font-weight: 400;
 }
 
@@ -87,14 +103,13 @@ strong {
 .name {
     width: 100%;
     height: 3em;
-    background-color: black;
+    background-image: url(/img/darkness.png);
 }
 
 .names {
     font-family: 'Press Start 2P', cursive;
     font-weight: 400;
     font-size: 1.1em;
-    color: white;
     padding: 5px;
     animation-name: desplazamiento;
     animation-duration: 20s;
@@ -129,7 +144,12 @@ strong {
 }
 
 .lg_list {
-    width: 48%;
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
 }
 
 .menu {
@@ -139,7 +159,6 @@ strong {
 
 h3 {
     margin-bottom: 15px;
-    color: #000080;
     font-weight: 900;
 }
 
@@ -152,12 +171,39 @@ h3 {
     width: 20px;
 }
 
+.jam {
+    font-size: 20px;
+    color: var(--color2);
+}
+
+.yt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3.5em 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.h_yt {
+    font-size: 2em;
+    grid-column: span 2;
+    margin: auto;
+}
+
+iframe {
+    border: 5px solid white;
+    justify-self: center;
+}
+
 /*====== FOOTER ======*/
 
 h4 {
     font-size: 2em;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+.h_foo{
+    margin-top: 30px;
 }
 
 .clock {
@@ -167,12 +213,12 @@ h4 {
 
 .simply-section {
     border-radius: 50px;
-    background: linear-gradient(145deg, #7ab9d4, #90dcfb);
-    box-shadow:  20px 20px 60px #73afc8, 
-                -20px -20px 60px #9bedff;
-    width: 180px;
-    height: 180px;
-    margin: 100px 40px;
+    background: linear-gradient(145deg, #161e24, #1a232b);
+    box-shadow:  20px 20px 8px #141c22, 
+                -20px -20px 8px #1c262e;
+    width: 150px;
+    height: 150px;
+    margin: 40px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,62 +226,14 @@ h4 {
 
 .simply-amount {
     display: block;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
+    color: var(--color1);
 }
 
 .simply-word {
-    font-size: 30px;
+    font-size: 20px;
+    color: var(--color1);
 }
 
-/*====== Reloj ======*/
-.countdown {
-    display: flex;
-    justify-content: center;
-}
 
-.simply-section {
-    border-radius: 50px;
-    background: linear-gradient(45deg, #9e9e9e, #bcbcbc);
-    box-shadow:  20px -20px 60px #969696, 
-                -20px 20px 60px #cacaca;
-    width: 180px;
-    height: 180px;
-    margin: 100px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.simply-amount {
-    display: block;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.simply-word {
-    font-size: 30px;
-}
-
-/* Cuenta Regresiva Eliminar al finalizar la cuenta */
-
-.p_clock {
-    font-size: 3em;
-    text-align: center;
-    margin-top: 100px;
-}
-
-@media screen and (max-width: 800px){
-    .countdown {
-        display: block;
-        margin: 1em 8em;   
-    }
-
-    .simply-section {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-}
- 
-/* ================================================ */
