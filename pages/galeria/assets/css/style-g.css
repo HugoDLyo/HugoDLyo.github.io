@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Handlee', cursive;
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #C0C0C0; }
+
+.bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
+
+.bar__img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: .5em;
+  margin-left: 1.5em;
+  border: 3px solid #008080; }
+
+.bar__nav {
+  display: flex;
+  align-items: center;
+  padding-right: 2rem; }
+  .bar__nav .bar__menu {
+    display: flex;
+    list-style: none; }
+
+.bar__list {
+  position: relative;
+  font-weight: 700; }
+  .bar__list:hover .bar__submenu {
+    display: block;
+    z-index: 1; }
+
+.bar__link {
+  display: inline-block;
+  padding: .2em .5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff; }
+  .bar__link:hover {
+    background-color: rgba(0, 128, 128, 0.4); }
+
+.bar__submenu {
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  display: none; }
+  .bar__submenu .bar__link {
+    font-weight: 700; }
+  .bar__submenu .bar--links {
+    margin-top: 10px; }
+    .bar__submenu .bar--links:hover {
+      background-color: rgba(0, 128, 128, 0.4);
+      border: none; }
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  margin: 1.5rem 0;
+  padding: .8rem 0;
+  color: #fff; }
+
+.grid__gallery {
+  display: grid;
+  height: 100vh;
+  margin: 0 1em 2em 1em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: .5em; }
+
+.grid__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid #fff; }
+
+.grid__img:hover {
+  filter: grayscale(30%);
+  cursor: pointer;
+  transition: filter .5s; }
+
+.grid__container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .4s ease-in; }
+
+.mover {
+  transform: translateX(0); }
+
+.grid__img-show {
+  height: 80%;
+  transform: scale(0);
+  display: block;
+  object-fit: cover;
+  transition: transform .5s .4s; }
+
+.show {
+  transform: scale(1); }
+
+.grid__copy {
+  position: fixed;
+  color: #fff;
+  bottom: 40px; }
+
+.fas.fa-times-circle {
+  position: absolute;
+  color: #fff;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8em;
+  cursor: pointer; }

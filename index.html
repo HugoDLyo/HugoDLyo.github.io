@@ -1,135 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="pagina para mi novia" content="linea del tiempo de nuestro noviazgo">
-    <link rel="icon" href="img/rosa.svg">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;900&family=Lobster+Two&family=Press+Start+2P&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css">  
-    <title>Five Years</title>
+    <!-- Facebook -->
+    <meta property="og:image" content="/images/hugo&yuli.jpg">
+    <meta property="og:description" content="Página dedica a los 5 años de noviazgo con mi hermosa novia Yuli.">
+    <meta property="og:title" content="Feliz Aniversario">
+    <!-- Twitter -->
+    <meta property="twitter:image" content="/images/hugo&yuli.jpg">
+    <meta property="twitter:description" content="Página dedica a los 5 años de noviazgo con mi hermosa novia Yuli.">
+    <meta property="twitter:title" content="Feliz Aniversario">
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Sansita+Swashed:wght@500;900&display=swap" rel="stylesheet">
+    <!-- Normalize -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
+    <!-- Estilos Personales -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/b73ad790aa.js" crossorigin="anonymous"></script>
     
-</head>
+    <title>Quinto Aniversario</title>
+    <meta name="author" content="Hugo Pineda">
 
+</head>
 <body>
     
-    <!-- INICIO DEL HEADER -->
-    <header class="header">
-        <h1>Feliz 5°<br>Aniversario</h1>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M-5.92,29.11 C158.29,238.31 407.73,-81.41 504.79,99.17 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #0d0d0d;"></path>
-            </svg></div>
+    <!-- INICIO HEADER -->
+    <header class="header" id="header">
+        <div class="bar">
+            <div class="bar__logo">
+                <img src="/images/hugo&yuli.jpg" class="bar__img" alt="foto_de_hugo&yuli" title="Foto_de_Hugo&Yuli">
+            </div>
+            <nav class="bar__nav">
+                <ul class="bar__menu">
+                    <li class="bar__list"><a href="#header" class="bar__link">Inicio</a></li>
+                    <li class="bar__list"><a href="#soon" class="bar__link">Próximamente</a></li>
+                    <li class="bar__list"><a href="#love" class="bar__link">Mi Amor</a></li>
+                    <li class="bar__list"><a href="#multimedia" class="bar__link">Multimedia</a>
+                        <ul class="bar__submenu">
+                            <li class="bar__list"><a href="/pages/cartas/letters.html" class="bar__link bar--links">Cartas</a></li>
+                            <li class="bar__list"><a href="/pages/galeria/gallery.html" class="bar__link bar--links">Galería</a></li>
+                            <li class="bar__list"><a href="/pages/anecdotario/anecdotal.html" class="bar__link bar--links">Anecdotario</a></li>
+                        </ul>
+                    </li>
+                    <li class="bar__list"><a href="#sky" class="bar__link">Cielo</a></li>
+                    <li class="bar__list"><a href="#video" class="bar__link">Canciones</a></li>
+                    <li class="bar__list"><a href="#footer" class="bar__link">Novios</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="slogan">
+            <p class="slogan__pg">Feliz 5°</p>
+            <p class="slogan__pg">Aniversario</p>
+        </div>
+
     </header>
-    <!--FIN HEADER-->
+    <!-- FIN HEADER -->
 
-    <!--INICIO MAIN-->
+    <!-- INICIO MAIN -->
     <main>
+        
+        <section class="time" id="soon"> <!--Inicio Time-->
+            <div class="countdownBx">
+                <h2 class="countdownBx__title">Próximo Aniversario<br><span class="countdownBx__span">20<i>21</i></span></h2>
+                <div class="countdown">
+                    <div id="day">NA</div>
+                    <div id="hour">NA</div>
+                    <div id="minute">NA</div>
+                    <div id="second">NA</div>
+                </div>
+            </div>
+        </section>
 
-        <section class="content">
-            <h2 data-text="Mi Amor">Mi Amor</h2>
-            <p class="ct_p">Esta página la cree para nosotros y para que quede registrado todo lo que siento por mi amor
+        <section class="container" id="love"> <!--Inicio Texto(1)-->
+            <div class="written">
+                <h2 class="written__title">Mi Amor</h2>
+                <p class="written__pg">Esta página la cree para nosotros y para que quede registrado todo lo que siento por mi amor
                 y obvio de igual manera ir practicando todo lo que voy aprendiendo de diseño web y más cosas así que
                 esto solo es el principio ya que muchas cosas van a ir mejorando y me refiero a que unas cosas se quedan
                 otras se van jajaja pero no solo esto es mío sino tuyo también amor y sabes porque.</p>
-            <p class="ct_p">Porque aquí encontraras las cartas que me pediste, una galería de nuestras fotos y un
+                <p class="written__pg">Porque aquí encontraras las cartas que me pediste, una galería de nuestras fotos y un
                 anecdotario (como un diario) el cual iremos llenando con nuestras salidas o cosas que nosotros queremos,
                 yo sé que ahorita no se va a ver tan genial como quisiera porque un tengo muchas cosas por aprender pero
                 te aseguro mi cielo que poco a poco le iré metiendo mucho más cosas mi cielo.</p>
-            <p class="ct_p">Yo no soy tan bueno escribiendo o haciendo cartitas lo sabes mi amor, pero aquí quiero
+                <p class="written__pg">Yo no soy tan bueno escribiendo o haciendo cartitas lo sabes mi amor, pero aquí quiero
                 plasmar todo todo mi amor por ti, porque estos 5 años a tu lado eh aprendido muchas cosas y no solo eso,
                 me has cambiado de una manera muy grande.</p>
-            <p class="ct_p"><strong>TE AMO MI HERMOSA NOVIA</strong> con todo mi corazón.</p>
+                <p class="written__pg"><strong class="written__strong">TE AMO MI HERMOSA NOVIA</strong> con todo mi corazón.</p>
+            </div>
         </section>
+        
+        <section class="scrollbar"> <!--Inicio Barra(1)-->
+            <p class="scrollbar__pg"><img src="/images/corazones.svg" class="scrollbar__img" alt="dos_corazones" title="Dos_Corazones"> Hugo  &  Yuli <img src="/images/corazones.svg" class="scrollbar__img" alt="dos_corazones" title="Dos_Corazones"></p>
+        </section>
+
+        <section class="container" id="multimedia"> <!--Inicio Multimedios-->
+            <div class="multimedia">
+                <div class="multimedia__content">
+                    <div class="multimedia__box">
+                        <div class="multimedia__imgBx">
+                            <img src="/images/gall.jpg" class="multimedia__img" alt="foto_de_hugo&yuli" title="Foto_de_Hugo&Yuli">
+                        </div>
+                        <div class="multimedia__contentBx">
+                            <p class="multimedia__pg">Galería<br><a href="/pages/galeria/gallery.html" class="multimedia__link"><i class="fas fa-chevron-circle-down"></i></a></p>
+                        </div>
+                    </div>
+
+                    <div class="multimedia__box">
+                        <div class="multimedia__imgBx">
+                            <img src="/images/carta.jpg" class="multimedia__img" alt="foto_de_hugo&yuli" title="Foto_de_Hugo&Yuli">
+                        </div>
+                        <div class="multimedia__contentBx">
+                            <p class="multimedia__pg">Cartas<br><a href="/pages/cartas/letters.html" class="multimedia__link"><i class="fas fa-chevron-circle-down"></i></a></p>
+                        </div>
+                    </div>
+
+                    <div class="multimedia__box">
+                        <div class="multimedia__imgBx">
+                            <img src="/images/anecd1.jpg" class="multimedia__img" alt="foto_de_hugo&yuli" title="Foto_de_Hugo&Yuli">
+                        </div>
+                        <div class="multimedia__contentBx">
+                            <p class="multimedia__pg">Anecdotario<br><a href="/pages/anecdotario/anecdotal.html" class="multimedia__link"><i class="fas fa-chevron-circle-down"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scrollbar"> <!--Inicio Barra(2)-->
+            <p class="scrollbar__pg"><img src="/images/corazones.svg" class="scrollbar__img" alt="dos_corazones" title="Dos_Corazones"> Saranghae Yuliana <img src="/images/corazones.svg" class="scrollbar__img" alt="dos_corazones" title="Dos_Corazones"></p>
+        </section>
+
+        <section class="container" id="sky"> <!--Inicio Texto(2)-->
+            <div class="written">
+                <h2 class="written__title">Mi Cielo</h2>
+                <p class="written__pg">Gracias amor por todos estos años juntos, gracias por convivir con mi familia y soportar mis
+                    dramas, locuras y demás cosas yo sé que no soy una persona muy fácil de entender pero créeme amor que pese a
+                    eso cuando te digo que <strong class="written__strong">TE AMO</strong> lo hago de corazón y sin mentir. Tu eres mi novia hermosa y
+                    sobre todo con la persona con la quiero estar por mucho tiempo. De nuevo gracias mi amor y espero te guste
+                    esto que hice para ti, obvio al pasar del tiempo va a ir mejorando y se va a ir haciendo más grande y mucho
+                    más bonita. <strong class="written__strong">TE AMO CORAZÓN MIO.</strong></p>
+            </div>
+        </section>
+
+        <section class="container" id="video"> <!--Inicio Videos-->
+            <div class="video">
+                <h2 class="video__title">Algunos de los videos que me has dedicado</h2>
+                <div class="video__content">
+                    <iframe src="https://www.youtube.com/embed/MHfQbXiOJIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video__content">
+                    <iframe src="https://www.youtube.com/embed/BxVAk5Cgp2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>    
+                
+                <div class="video__content">
+                    <iframe src="https://www.youtube.com/embed/CWpGUdMRtW0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video__content">
+                    <iframe src="https://www.youtube.com/embed/od011D9Fx7s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video__content">
+                    <iframe src="https://www.youtube.com/embed/r3IzjBEOKAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video__content">    
+                    <iframe src="https://www.youtube.com/embed/cvgfPRo7e8A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video__content">
+                    <iframe src="https://www.youtube.com/embed/D9W4DLjmoOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video__content">
+                    <iframe src="https://www.youtube.com/embed/ErmVTrebidQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video__content">
+                    <iframe src="https://www.youtube.com/embed/dXkTvFt0XNE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video__content">
+                    <iframe src="https://www.youtube.com/embed/FmRh8qxktMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section> 
     </main>
-    <!--FIN MAIN-->
+    <!-- FIN MAIN -->
 
-    <section class="name">
-        <p class="names"><img src="/img/corazones.svg" alt="Dos corazones" title="Dos corazones" class="corazones"> HUGO
-            & YULIANA <img src="/img/corazones.svg" alt="Dos corazones" title="Dos corazones" class="corazones"></p>
-    </section>
-
-    <section class="content cont1">
-        <img src="/img/hugo_y_yuli.jpg" alt="Foto_Hugo&Yuli" title="Foto_Hugo&Yuli" class="lg_list">
-        <div class="menu">
-            <h3>Galería</h3>
-            <p class="p_menu">Aquí encontraras todas esas fotos mi amor que nos hemos tomado juntos en cada salida o
-                cada que hemos podido mi cielo. <a href="/pages/gallery.html"><span class="jam jam-arrow-circle-right"></span></a></p>
-            <h3>Cartas</h3>
-            <p class="p_menu">Tal cual todas esas cartas que me pediste o que me llegues a pedir aquí estarán mi cielo
-                para el momento que tú las quieres leer. <a href="/pages/letters.html"><span class="jam jam-arrow-circle-right"></span></a></p>
-            <h3>Anecdotario</h3>
-            <p class="p_menu">Como ya lo había mencionado nuestro diario que se ira haciendo a partir de este fecha mi
-                amor hasta el día que estemos juntos. <a href="/pages/anecdotal.html"><span class="jam jam-arrow-circle-right"></span></a></p>
-        </div>
-    </section>
-
-    <section class="name">
-        <p class="names namees"><img src="/img/corazones.svg" alt="Dos corazones" title="Dos corazones"
-                class="corazones"> SARANGHAE YULIANA <img src="/img/corazones.svg" alt="Dos corazones"
-                title="Dos corazones" class="corazones"></p>
-    </section>
-
-    <section class="content">
-        <p class="ct_p">Gracias amor por todos estos años juntos, gracias por convivir con mi familia y soportar mis
-            dramas, locuras y demás cosas yo sé que no soy una persona muy fácil de entender pero créeme amor que pese a
-            eso cuando te digo que <strong>TE AMO</strong> lo hago de corazón y sin mentir. Tu eres mi novia hermosa y
-            sobre todo con la persona con la quiero estar por mucho tiempo. De nuevo gracias mi amor y espero te guste
-            esto que hice para ti, obvio al pasar del tiempo va a ir mejorando y se va a ir haciendo más grande y mucho
-            más bonita. <strong>TE AMO CORAZÓN MIO.</strong></p>
-    </section>
-
-    <section class="content yt">
-
-        <h2 class="h_yt" data-text="Algunos de los videos que me has dedicado">Algunos de los videos que me has dedicado</h2>
-
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/MHfQbXiOJIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/BxVAk5Cgp2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/CWpGUdMRtW0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/od011D9Fx7s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/r3IzjBEOKAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/cvgfPRo7e8A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/D9W4DLjmoOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/ErmVTrebidQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/dXkTvFt0XNE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/FmRh8qxktMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </section>
-
-    <section>
-        <div class="content">
-            <h4 data-text="PróximoAniversario">Próximo Aniversario</h4>
-            <div id="countdown" class="clock"></div>
+    
+    <!-- INICIO FOOTER  -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="clock">
+                <h2 class="clock__title">Tiempo de Novios</h2>
+                <div class="clock__watch" id="time_elapsed"></div>
+            </div>
         </div>
 
-        <div class="content time">
-            <h4 class="h_foo" data-text="Tiempo de Novios">Tiempo de Novios</h4>
-            <div id="time_elapsed" class="clock"></div>
+        <div class="phases">
+            <div class="phases__content">
+                <p class="phases__pg"><a href="/pages/fases/001/fases.html" class="phases__link">Fase 1</a></p>
+            </div>
+            <div class="phases__content">
+                <p class="phases__pg"><a href="/404/error.html" class="phases__link">Fase 2</a></p>
+            </div>
         </div>
-    </section>
-
-    <footer>
-
+        
+        <div class="icon">
+            <div class="go-up">
+                <i class="fas fa-angle-up"></i>
+            </div>            
+        </div>
     </footer>
+    <!-- FIN FOOTER -->
 
-    <script src="javascript/simplyCountdown.min.js"></script>
-    <script src="javascript/countdown.js"></script>
-    <script src="javascript/timeelapsed.js"></script>
-
+    <!-- LINKS JAVASCRIT -->
+    <script src="/assets/js/simplyCountdown.min.js"></script>
+    <script src="/assets/js/timeelapsed.js"></script>
+    <script src="/assets/js/watch.js"></script>
+    <script src="/assets/js/go_up.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,405 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Handlee', cursive;
+  scroll-behavior: smooth; }
+  *::-webkit-scrollbar {
+    width: 13px;
+    height: 100vh;
+    background-color: #48D1CC;
+    border-radius: 10px;
+    box-shadow: inset -3px -3px 6px #4682B4; }
+  *::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #4682B4; }
+    *::-webkit-scrollbar-thumb:active {
+      background-color: transparent;
+      border: 2px solid #4682B4; }
+
+body {
+  background-image: url(/images/torre_tokyo.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position-y: center bottom;
+  background-position-x: center;
+  object-fit: cover;
+  background-repeat: no-repeat; }
+
+.container {
+  margin: 1.5rem 4rem;
+  padding: .5rem; }
+
+.header {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(120deg, rgba(166, 192, 254, 0.5) 0%, rgba(246, 128, 132, 0.5) 100%), url(/images/hugo&yuli.jpg);
+  background-size: cover;
+  background-position-y: center;
+  object-fit: cover;
+  background-attachment: fixed; }
+
+.slogan__pg {
+  font-size: 7em;
+  padding-top: 1.3em;
+  padding-left: .3em;
+  font-family: 'Sansita Swashed', cursive;
+  font-weight: 600;
+  margin: 0; }
+  .slogan__pg:nth-of-type(2) {
+    padding-top: 0; }
+
+.slogan__wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
+
+.bar__img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: .5em;
+  margin-left: 1.5em;
+  border: 3px solid #008080; }
+
+.bar__nav {
+  display: flex;
+  align-items: center;
+  padding-right: 2rem; }
+  .bar__nav .bar__menu {
+    display: flex;
+    list-style: none; }
+
+.bar__list {
+  position: relative;
+  font-weight: 700; }
+  .bar__list:hover .bar__submenu {
+    display: block;
+    z-index: 1; }
+
+.bar__link {
+  display: inline-block;
+  padding: .2em .5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff; }
+  .bar__link:hover {
+    background-color: rgba(0, 128, 128, 0.4); }
+
+.bar__submenu {
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  display: none; }
+  .bar__submenu .bar__link {
+    font-weight: 700; }
+  .bar__submenu .bar--links {
+    margin-top: 10px; }
+    .bar__submenu .bar--links:hover {
+      background-color: rgba(0, 128, 128, 0.4);
+      border: none; }
+
+.content .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - 450px); }
+
+.countdownBx__title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 500;
+  line-height: 4em; }
+  .countdownBx__title .countdownBx__span {
+    font-size: 6em;
+    font-weight: 700; }
+  .countdownBx__title i {
+    font-style: initial;
+    color: #ff0; }
+
+.countdown {
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .countdown div {
+    position: relative;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 0 15px;
+    margin-top: -25px; }
+    .countdown div::before {
+      content: 'text';
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 100%;
+      height: 35px;
+      color: #fff;
+      font-size: 0.35em;
+      font-weight: 500;
+      line-height: 35px;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+
+.countdown #day::before {
+  content: 'Días'; }
+
+.countdown #hour::before {
+  content: 'Horas'; }
+
+.countdown #minute::before {
+  content: 'Minutos'; }
+
+.countdown #second,
+.countdown #second::before {
+  content: 'Segundos';
+  color: #ff0; }
+
+.written {
+  text-align: center; }
+
+.written__title {
+  font-size: 2em;
+  font-weight: 600;
+  color: #000; }
+
+.written__pg {
+  margin-top: .5em;
+  font-size: 1.2em;
+  padding-left: .7em;
+  padding-right: .7em; }
+  .written__pg:last-child {
+    padding-bottom: .8em; }
+  .written__pg .written__strong {
+    background-color: #00800066;
+    color: #551a8b; }
+
+.scrollbar {
+  width: 100%;
+  height: 3em; }
+
+.scrollbar__pg {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 1.6em;
+  padding: 5px 0 6px 0;
+  animation-name: desplazamiento;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; }
+
+@keyframes desplazamiento {
+  0% {
+    margin-left: 0px; }
+  50% {
+    margin-left: 1050px; }
+  100% {
+    margin-left: 0px; } }
+  .scrollbar__pg .scrollbar__img {
+    width: 30px; }
+
+.multimedia {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.multimedia__content {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.multimedia__box {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  margin: 40px; }
+  .multimedia__box .multimedia__imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    z-index: 2; }
+    .multimedia__box .multimedia__imgBx .multimedia__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .multimedia__box:hover .multimedia__imgBx {
+    transform: translate(-35px, -35px); }
+  .multimedia__box:hover .multimedia__contentBx {
+    transform: translate(35px, 35px); }
+
+.multimedia__contentBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 15px;
+  transition: 0.5s ease-in-out; }
+  .multimedia__contentBx .multimedia__pg {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center; }
+
+.video {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5.5em 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 2.5em; }
+
+.video__title {
+  grid-column: span 2;
+  font-size: 2em;
+  margin: auto; }
+
+.video__content {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  position: relative; }
+  .video__content::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%; }
+  .video__content iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #fff; }
+
+.footer {
+  background-color: #000;
+  width: 100%;
+  position: absolute; }
+
+.clock__title {
+  color: #fff;
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 2em;
+  margin-bottom: 1rem;
+  text-align: center; }
+
+.clock__watch {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.055); }
+
+.simply-section {
+  width: 150px;
+  margin: 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.simply-amount {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff; }
+
+.simply-word {
+  font-size: 20px;
+  color: #fff; }
+
+.phases {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 2rem;
+  margin-bottom: .5rem; }
+
+.phases__pg {
+  text-align: center;
+  font-size: 1.5em; }
+
+.phases__link {
+  color: #fff;
+  text-decoration: none; }
+  .phases__link:hover {
+    color: #008080; }
+
+.icon {
+  position: fixed;
+  bottom: .2rem;
+  right: .2rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: -1; }
+
+.go-up {
+  width: 0rem;
+  height: 0rem;
+  background-color: transparent;
+  border: 2px solid #008080;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; }
+
+.fa-angle-up {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: .2s; }
+
+.show {
+  z-index: 10; }
+  .show .go-up {
+    animation: popup .3s ease-in-out;
+    width: 3rem;
+    height: 3rem;
+    z-index: 11; }
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem; }
+  50% {
+    width: 4rem;
+    height: 4rem; }
+  100% {
+    width: 3rem;
+    height: 3rem; } }
+  .show .fa-angle-up {
+    transform: translate(-50%, -50%) scale(1); }

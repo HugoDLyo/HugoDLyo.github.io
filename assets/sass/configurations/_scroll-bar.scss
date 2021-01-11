@@ -1,0 +1,33 @@
+.scrollbar
+{
+    width: 100%;
+    height: 3em;
+}
+
+.scrollbar__pg
+{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 1.6em;
+    padding: 5px 0 6px 0;
+    animation-name: desplazamiento;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+    @keyframes desplazamiento
+    {
+        0% {
+            margin-left: 0px;
+        }
+        50% {
+            margin-left: 1050px;
+        }
+        100% {
+            margin-left: 0px;
+        }
+    }
+
+    .scrollbar__img
+    {
+        width: 30px;
+    }
+}

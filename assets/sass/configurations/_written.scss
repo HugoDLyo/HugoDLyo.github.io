@@ -1,0 +1,30 @@
+.written
+{
+    text-align: center;
+}
+
+.written__title
+{
+    font-size: 2em;
+    font-weight: 600;
+    color: $color-defaul;
+}
+
+.written__pg
+{
+    margin-top: .5em;
+    font-size: 1.2em;
+    padding-left: .7em;
+    padding-right: .7em;
+
+    &:last-child
+    {
+        padding-bottom: .8em;
+    }
+
+    .written__strong
+    {
+        background-color: $markText;
+        color: $color-nav;
+    }
+}

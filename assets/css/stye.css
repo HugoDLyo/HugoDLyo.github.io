@@ -1,0 +1,387 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Handlee', cursive;
+  scroll-behavior: smooth; }
+  *::-webkit-scrollbar {
+    width: 12.5px;
+    height: 100vh;
+    background-color: #B0E0E6;
+    border-radius: 10px;
+    border: 3px solid #B0E0E6; }
+  *::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2.5px solid #551a8b; }
+    *::-webkit-scrollbar-thumb:active {
+      background-color: #551a8b;
+      border: none; }
+
+.container {
+  margin: .1em;
+  margin-top: 20px; }
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  color: #551a8b; }
+
+.image__logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: .5em;
+  margin-left: 1.5em;
+  border: 3px solid #008080; }
+
+.nav__header {
+  display: flex;
+  align-items: center;
+  padding-right: 2rem; }
+  .nav__header .menu__header {
+    display: flex;
+    list-style: none; }
+
+.list__header {
+  position: relative; }
+  .list__header:hover .submenu__header {
+    display: block;
+    z-index: 1; }
+
+.link__header {
+  display: inline-block;
+  padding-right: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .link__header:hover {
+    border-top: 2px solid #008080;
+    border-bottom: 2px solid #008080; }
+
+.submenu__header {
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  display: none; }
+  .submenu__header .link__header {
+    color: #000;
+    font-weight: 300; }
+  .submenu__header .sl__header {
+    margin-top: 10px; }
+    .submenu__header .sl__header:hover {
+      border-top: none;
+      background-color: rgba(0, 128, 128, 0.4);
+      border-bottom: 2px solid #008080; }
+
+.banner {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(120deg, rgba(166, 192, 254, 0.5) 0%, rgba(246, 128, 132, 0.5) 100%), url(/images/hugo&yuli.jpg);
+  background-size: cover;
+  background-position-y: center;
+  object-fit: cover;
+  background-attachment: fixed;
+  position: relative; }
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+h1 {
+  font-size: 10em;
+  padding-top: .5em;
+  padding-left: .3em;
+  font-family: 'Sansita Swashed', cursive;
+  font-weight: 900;
+  margin: 0; }
+
+.p__banner {
+  font-size: 8em;
+  padding-left: .1em;
+  font-family: 'Sansita Swashed', cursive; }
+
+.body {
+  background-image: url(/images/torre_tokyo.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position-y: center top;
+  background-position-x: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  padding: .1px; }
+
+.content .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - 450px); }
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 500;
+  line-height: 4em; }
+  h2 span {
+    font-size: 6em;
+    font-weight: 700; }
+  h2 i {
+    font-style: initial;
+    color: #ff0; }
+
+.countdown {
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .countdown div {
+    position: relative;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 0 15px;
+    margin-top: -25px; }
+    .countdown div::before {
+      content: 'text';
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 100%;
+      height: 35px;
+      color: #fff;
+      font-size: 0.35em;
+      font-weight: 500;
+      line-height: 35px;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+
+.countdown #day::before {
+  content: 'Días'; }
+
+.countdown #hour::before {
+  content: 'Horas'; }
+
+.countdown #minute::before {
+  content: 'Minutos'; }
+
+.countdown #second,
+.countdown #second::before {
+  content: 'Segundos';
+  color: #ff0; }
+
+.love {
+  text-align: center; }
+
+.title__love {
+  font-size: 2em;
+  font-weight: 600;
+  color: #000; }
+
+.p__love {
+  margin-top: .5em;
+  font-size: 1.2em;
+  padding-left: .7em;
+  padding-right: .7em; }
+  .p__love:last-child {
+    padding-bottom: .8em; }
+  .p__love strong {
+    background-color: #00800066;
+    color: #551a8b; }
+
+.scroll_bar {
+  width: 100%;
+  height: 3em; }
+
+.names {
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 1.6em;
+  padding: 5px 0 6px 0;
+  animation-name: desplazamiento;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; }
+
+@keyframes desplazamiento {
+  0% {
+    margin-left: 0px; }
+  50% {
+    margin-left: 1050px; }
+  100% {
+    margin-left: 0px; } }
+  .names .two__hear {
+    width: 30px; }
+
+.multimedia {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cont__multi {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.box {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  margin: 40px; }
+  .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    z-index: 2; }
+    .box .imgBx img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .box:hover .imgBx {
+    transform: translate(-35px, -35px); }
+  .box:hover .contentBx {
+    transform: translate(35px, 35px); }
+
+.contentBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 15px;
+  transition: 0.5s ease-in-out; }
+  .contentBx .p_Bx {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center; }
+    .contentBx .p_Bx span {
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 2px; }
+
+.love_video {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5.5em 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 2.5em; }
+
+.title__video {
+  grid-column: span 2;
+  font-size: 2em;
+  margin: auto; }
+
+iframe {
+  border: 5px solid #fff;
+  justify-self: center; }
+
+.footer {
+  background-color: #000;
+  width: 100%;
+  position: absolute; }
+
+.titile__footer {
+  color: #fff;
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 2em; }
+
+.clock {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.055); }
+
+.simply-section {
+  width: 150px;
+  margin: 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.simply-amount {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff; }
+
+.simply-word {
+  font-size: 20px;
+  color: #fff; }
+
+.icon {
+  position: fixed;
+  bottom: .2rem;
+  right: .2rem;
+  width: 4rem;
+  height: 4rem;
+  z-index: -1; }
+
+.go-up {
+  width: 0rem;
+  height: 0rem;
+  background-color: #B0E0E6;
+  border: 1.2px solid #008080;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; }
+
+.fa-angle-up {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: .2s; }
+
+.show {
+  z-index: 10; }
+  .show .go-up {
+    animation: popup .3s ease-in-out;
+    width: 4rem;
+    height: 4rem;
+    z-index: 11; }
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem; }
+  50% {
+    width: 5rem;
+    height: 5rem; }
+  100% {
+    width: 4rem;
+    height: 4rem; } }
+  .show .fa-angle-up {
+    transform: translate(-50%, -50%) scale(1); }

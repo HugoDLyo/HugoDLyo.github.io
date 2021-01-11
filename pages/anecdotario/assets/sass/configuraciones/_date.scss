@@ -1,0 +1,29 @@
+.title
+{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 1.2rem 0;
+}
+
+.date__title
+{
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.date__pg
+{
+    font-size: .9em;
+    padding-left: .8rem;
+}
+
+.date__link
+{
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+.date__link:hover
+{
+    background-color: $markText;
+}
